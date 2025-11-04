@@ -16,5 +16,5 @@ remappings = [
     "@chainlink-ccip/=lib/chainlink-ccip/chains/evm/contracts/",
     "forge-std/=lib/forge-std/src/",
     "@forge/=lib/forge-std/src/",
-    "@chainlink-local/=lib/chainlink-local/"
+    "@chainlink-local/=lib/chainlink-local/",
 ]
