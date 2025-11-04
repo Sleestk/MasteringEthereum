@@ -28,12 +28,12 @@ contract BridgeToken is Script {
             amount: amountToSend
         });
         vm.startBroadcast();
-        Clinet.EVM2AnyMessage memory message = Client.EVM2AnyMessage({
+        Client.EVM2AnyMessage memory message = Client.EVM2AnyMessage({
             receiver: abi.encode(receiverAddress),
             data: "",
             tokenAmounts: tokenAmounts,
             feeToken: linkTokenAddress,
-            extraArgs: Clinet._argsToBytes(Client.EVMExtraArgsV2({gasLimit: 0}))
+            extraArgs: Client._argsToBytes(Client.EVMExtraArgsV1({gasLimit: 0}))
         });
         uint256 ccipFee = IRouterClient(routerAddress).getFee(destinationChainSelector, message);
         IERC20(linkTokenAddress).approve(routerAddress, ccipFee);
