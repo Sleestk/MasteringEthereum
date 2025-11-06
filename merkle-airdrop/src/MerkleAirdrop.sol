@@ -55,4 +55,12 @@ contract MerkleAirdrop {
         emit Claim(account, amount);
         I_AIRDROP_TOKEN.safeTransfer(account, amount);
     }
+
+    function getMerkleRoot() external view returns (bytes32) {
+        return I_MERKLE_ROOT;
+    }
+
+    function getAirdropToken() external view returns (IERC20) {
+        return I_AIRDROP_TOKEN;
+    }
 }

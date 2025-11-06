@@ -73,3 +73,6 @@
 [submodule "chainlink-fundamentals-f25/lib/forge-std"]
 	path = chainlink-fundamentals-f25/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "merkle-airdrop/lib/murky"]
+	path = merkle-airdrop/lib/murky
+	url = https://github.com/dmfxyz/murky

@@ -1,8 +1,83 @@
 {
+  "../ccip-rebase-token/lib/ccip": {
+    "rev": "065ef85b5fa52bb4583ebad9e51c20a977b64e7a"
+  },
+  "../ccip-rebase-token/lib/chainlink": {
+    "rev": "42fa92d32430b738d4b127322b4510c9f4d8aad3"
+  },
+  "../ccip-rebase-token/lib/chainlink-ccip": {
+    "rev": "abffbe23b9f7429d3128fa5ebe2606694008da8b"
+  },
+  "../ccip-rebase-token/lib/chainlink-evm": {
+    "rev": "020dd7f7edfcec7c2fcbcfb08b3a8e06cd254ea1"
+  },
+  "../ccip-rebase-token/lib/chainlink-local": {
+    "rev": "3bb414fcadb06ec0e33f55d4ccea0ecf373c7475"
+  },
+  "../ccip-rebase-token/lib/forge-std": {
+    "rev": "6bce1540c7a5d1c40eec032a1ae16f0e01f82b92"
+  },
+  "../ccip-rebase-token/lib/openzeppelin-contracts": {
+    "rev": "53bb34057ed97ea9b36d550f1c2c413ef5b6c6bb"
+  },
+  "../chainlink-fundamentals-f25/lib/forge-std": {
+    "rev": "8bbcf6e3f8f62f419e5429a0bd89331c85c37824"
+  },
+  "../foundry-defi-stablecoin-f25/lib/chainlink-brownie-contracts": {
+    "rev": "c6d0ca512f1b09d93bc81415d246dbee7e5c6894"
+  },
+  "../foundry-defi-stablecoin-f25/lib/forge-std": {
+    "rev": "77041d2ce690e692d6e03cc812b57d1ddaa4d505"
+  },
+  "../foundry-defi-stablecoin-f25/lib/openzeppelin-contracts": {
+    "rev": "e4f70216d759d8e6a64144a9e1f7bbeed78e7079"
+  },
+  "../foundry-erc20-f25/lib/forge-std": {
+    "rev": "77041d2ce690e692d6e03cc812b57d1ddaa4d505"
+  },
+  "../foundry-erc20-f25/lib/openzeppelin-contracts": {
+    "rev": "dbb6104ce834628e473d2173bbc9d47f81a9eec3"
+  },
+  "../foundry-fund-me-f25/lib/chainlink-brownie-contracts": {
+    "rev": "5cb41fbc9b525338b6098da5ea7dd0b7e92f89e4"
+  },
+  "../foundry-fund-me-f25/lib/forge-std": {
+    "rev": "77041d2ce690e692d6e03cc812b57d1ddaa4d505"
+  },
+  "../foundry-fund-me-f25/lib/foundry-devops": {
+    "rev": "924b6c9534e6b562fa37f751704e18acfae11f72"
+  },
+  "../foundry-nft-f25/lib/forge-std": {
+    "rev": "77041d2ce690e692d6e03cc812b57d1ddaa4d505"
+  },
+  "../foundry-nft-f25/lib/foundry-devops": {
+    "rev": "efff097a87e70c3d15661c9f2a2daeae0b33d5d5"
+  },
+  "../foundry-nft-f25/lib/openzeppelin-contracts": {
+    "rev": "e4f70216d759d8e6a64144a9e1f7bbeed78e7079"
+  },
+  "../foundry-smart-contract-lottery-f25/lib/chainlink-brownie-contracts": {
+    "rev": "12393bd475bd60c222ff12e75c0f68effe1bbaaf"
+  },
+  "../foundry-smart-contract-lottery-f25/lib/forge-std": {
+    "rev": "978ac6fadb62f5f0b723c996f64be52eddba6801"
+  },
+  "../foundry-smart-contract-lottery-f25/lib/foundry-devops": {
+    "rev": "df9f90b490423578142b5dd50752db9427efb2ac"
+  },
+  "../foundry-smart-contract-lottery-f25/lib/solmate": {
+    "rev": "a9e3ea26a2dc73bfa87f0cb189687d029028e0c5"
+  },
   "lib/forge-std": {
     "tag": {
       "name": "v1.11.0",
       "rev": "8e40513d678f392f398620b3ef2b418648b33e89"
+    }
+  },
+  "lib/murky": {
+    "tag": {
+      "name": "v0.1.0",
+      "rev": "5feccd1253d7da820f7cccccdedf64471025455d"
     }
   },
   "lib/openzeppelin-contracts": {
