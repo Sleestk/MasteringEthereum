@@ -21,14 +21,14 @@ contract GenerateInput is Script {
         whitelist[2] = "0x2ea3970Ed82D5b30be821FAAD4a731D35964F7dd";
         whitelist[3] = "0xf6dBa02C01AF48Cf926579F77C9f874Ca640D91D";
         count = whitelist.length;
-        string memory input = _createJSON();
+        string memory input = createJSON();
         // write to the output file the stringified output json tree dump
         vm.writeFile(string.concat(vm.projectRoot(), INPUT_PATH), input);
 
         console.log("DONE: The output is found at %s", INPUT_PATH);
     }
 
-    function _createJSON() internal view returns (string memory) {
+    function createJSON() internal view returns (string memory) {
         string memory countString = vm.toString(count); // convert count to string
         string memory amountString = vm.toString(AMOUNT); // convert amount to string
         string memory json = string.concat('{ "types": ["address", "uint"], "count":', countString, ',"values": {');

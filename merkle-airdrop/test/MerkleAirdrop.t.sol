@@ -4,6 +4,7 @@ pragma solidity ^0.8.24;
 import {Test, console} from "forge-std/Test.sol";
 import {MerkleAirdrop} from "../src/MerkleAirdrop.sol";
 import {BleToken} from "../src/BleToken.sol";
+import {DeployMerkleAirdrop} from "../script/DeployMerkleAirdrop.s.sol";
 
 contract MerkleAirdropTest is Test {
     MerkleAirdrop public airdrop;
@@ -19,6 +20,8 @@ contract MerkleAirdropTest is Test {
     uint256 userPrivKey;
 
     function setUp() public {
+        DeployMerkleAirdrop deployer = new DeployMerkleAirdrop();
+        (airdrop, token) = deployer.deployMerkleAirdrop();
         token = new BleToken();
         airdrop = new MerkleAirdrop(ROOT, token);
         token.mint(token.owner(), AMOUNT_TO_SEND);
