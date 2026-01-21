@@ -14,7 +14,7 @@ contract ClaimAirdrop is Script {
 
     function ClaimAirdrop(address airdrop) public {
         vm.startBroadcast();
-        MerkdleAirdrop(airdrop).claim(CLAIMINMG_ADDRESS, CLAIMING_AMOUNT, proof, v, r, s);
+        MerkdleAirdrop(airdrop).claim(CLAIMING_ADDRESS, CLAIMING_AMOUNT, proof, v, r, s);
         vm.stopBroadcast();
     }
     function run() public {
