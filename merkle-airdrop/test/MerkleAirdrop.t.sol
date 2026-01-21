@@ -31,6 +31,8 @@ contract MerkleAirdropTest is Test {
 
     function testUsersCanClaim() public {
         uint256 startingBalance = token.balanceOf(user);
+        //sign a message
+        (uint8 v, bytes32 r, bytes32 s) = vm.sign(userPrivKey, airdrop.getMessage(user, AMOUNT_TO_CLAIM));
         vm.prank(user);
         airdrop.claim(user, AMOUNT_TO_CLAIM, PROOF, v, r, s);
         uint256 endingBalance = token.balanceOf(user);
